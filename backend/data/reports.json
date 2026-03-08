@@ -1,0 +1,20 @@
+[
+  {
+    "userId": 1,
+    "category": "daniel",
+    "urgency": "extreme",
+    "message": "alert",
+    "imagePath": "C:\\Users\\yossi\\OneDrive\\Desktop\\Kodkode\\agents-reports-system\\backend\\data\\uploads\\image-1772981315079-99527521",
+    "id": "27b20282-3c34-4df5-ada1-be8a8f76ab6f",
+    "createdAt": "2026-03-08T14:48:35.100Z"
+  },
+  {
+    "userId": 1,
+    "category": "daniel",
+    "urgency": "extreme",
+    "message": "alert",
+    "filePath": null,
+    "id": "4e63d993-4c70-41be-8f9d-722c0a8e11be",
+    "createdAt": "2026-03-08T15:49:54.379Z"
+  }
+]
