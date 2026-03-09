@@ -11,4 +11,6 @@ router.use(authMiddleware, roleMiddleware(ADMIN));
 
 router.post("/users", adminController.addUser);
 
+router.get("/users", adminController.getUsers);
+
 export default router;

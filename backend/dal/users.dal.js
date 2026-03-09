@@ -16,6 +16,11 @@ export async function getUserByAgentCode(agentCode) {
   return agent;
 }
 
+export async function getAllUsers(){
+
+    return readJsonFile(USERS_FILE);
+}
+
 export async function addUser(agentCode, fullName, role, passwordHash) {
  
   const users = await readJsonFile(USERS_FILE);

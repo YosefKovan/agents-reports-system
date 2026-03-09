@@ -18,3 +18,13 @@ export async function addUser(req, res, next){
         next(error);
     }
 }
+
+export async function getUsers(req, res, next){
+
+    try{
+        const users = await adminService.getUsers();
+        return res.status(201).json({users});
+    }catch(error){
+        next(error);
+    }
+}

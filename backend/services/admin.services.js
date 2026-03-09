@@ -9,3 +9,9 @@ export async function addUser(agentCode, fullName, role){
 
     return user;
 }
+
+
+export async function getUsers(){
+     
+    return await usersDal.getAllUsers()
+}
