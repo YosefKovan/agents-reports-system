@@ -4,6 +4,13 @@
     "agentCode": "123456",
     "fullName": "shalom amsalem",
     "passwordHash": "hszoln znhzovn",
-    "role": "agent"
+    "role": "ADMIN"
+  },
+  {
+    "id": "7554d1bf-0fa2-4c42-9ab9-1cdf012569c6",
+    "agentCode": "12345",
+    "fullName": "david",
+    "role": "AGENT",
+    "passwordHash": "wzerw"
   }
 ]

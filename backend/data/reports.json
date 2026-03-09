@@ -1,20 +1,92 @@
 [
   {
+    "category": "billing",
+    "urgency": "high",
+    "message": "Customer was charged twice",
     "userId": 1,
-    "category": "daniel",
-    "urgency": "extreme",
-    "message": "alert",
-    "imagePath": "C:\\Users\\yossi\\OneDrive\\Desktop\\Kodkode\\agents-reports-system\\backend\\data\\uploads\\image-1772981315079-99527521",
-    "id": "27b20282-3c34-4df5-ada1-be8a8f76ab6f",
-    "createdAt": "2026-03-08T14:48:35.100Z"
+    "filePath": null,
+    "id": "119ee8b8-b0e3-4fa5-a79a-b849a1003245",
+    "createdAt": "2026-03-08T20:27:00.614Z"
   },
   {
+    "category": "technical",
+    "urgency": "medium",
+    "message": "App crashes when opening settings",
     "userId": 1,
-    "category": "daniel",
-    "urgency": "extreme",
-    "message": "alert",
     "filePath": null,
-    "id": "4e63d993-4c70-41be-8f9d-722c0a8e11be",
-    "createdAt": "2026-03-08T15:49:54.379Z"
+    "id": "78c738c6-f37e-4fea-bb79-f3b0a57ba601",
+    "createdAt": "2026-03-08T20:27:00.614Z"
+  },
+  {
+    "category": "support",
+    "urgency": "low",
+    "message": "User asking how to reset password",
+    "userId": 1,
+    "filePath": null,
+    "id": "3b3838e6-6ce5-4cb3-9c61-80d9979d0e62",
+    "createdAt": "2026-03-08T20:27:00.614Z"
+  },
+  {
+    "category": "billing",
+    "urgency": "medium",
+    "message": "Invoice not received",
+    "userId": 1,
+    "filePath": null,
+    "id": "f139232e-5057-48e1-8093-470c18603a4d",
+    "createdAt": "2026-03-08T20:27:00.614Z"
+  },
+  {
+    "category": "technical",
+    "urgency": "high",
+    "message": "Server returns 500 error",
+    "userId": 1,
+    "filePath": null,
+    "id": "2dd11d63-5cd1-4b9e-881f-1e4525a0e4e5",
+    "createdAt": "2026-03-08T20:27:00.614Z"
+  },
+  {
+    "category": "billing",
+    "urgency": "high",
+    "message": "Customer was charged twice",
+    "userId": 1,
+    "filePath": null,
+    "id": "ed7b5abe-ccb8-45ff-9a14-794700b3eb8a",
+    "createdAt": "2026-03-09T07:16:45.841Z"
+  },
+  {
+    "category": "technical",
+    "urgency": "medium",
+    "message": "App crashes when opening settings",
+    "userId": 1,
+    "filePath": null,
+    "id": "dfc2d6ae-720f-4688-8c72-5ae3713c532d",
+    "createdAt": "2026-03-09T07:16:45.841Z"
+  },
+  {
+    "category": "support",
+    "urgency": "low",
+    "message": "User asking how to reset password",
+    "userId": 1,
+    "filePath": null,
+    "id": "91733944-9d00-4ff9-ba9a-a7fd8d6a2c53",
+    "createdAt": "2026-03-09T07:16:45.841Z"
+  },
+  {
+    "category": "billing",
+    "urgency": "medium",
+    "message": "Invoice not received",
+    "userId": 1,
+    "filePath": null,
+    "id": "8dddae84-c268-440f-88b4-babfc713d5fa",
+    "createdAt": "2026-03-09T07:16:45.841Z"
+  },
+  {
+    "category": "technical",
+    "urgency": "high",
+    "message": "Server returns 500 error",
+    "userId": 1,
+    "filePath": null,
+    "id": "37c05dcc-fae4-43d8-9a9b-3f848c4b8e6c",
+    "createdAt": "2026-03-09T07:16:45.841Z"
   }
 ]

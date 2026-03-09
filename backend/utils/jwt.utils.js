@@ -1,6 +1,6 @@
 import jwt from "jsonwebtoken";
 
-const EXPIRES_IN = "1h";
+const EXPIRES_IN = "24h";
 
 //====================================
 //            create token
