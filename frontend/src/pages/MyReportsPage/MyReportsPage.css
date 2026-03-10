@@ -1,0 +1,41 @@
+
+.my-reports-page{
+    height: 100vh;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.my-reports-page h1{
+    font-size: 3rem;
+    color: black;
+}
+
+.my-reports-page .button{
+    padding: 0.8rem 3rem;
+    cursor: pointer;
+    background-color: #0198fe;
+    border: none;
+    border-radius: 0.5rem;
+    color: white;
+}
+
+.reports-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap : 2rem
+}
+
+@media screen and (width <= 600px){
+    .reports-section{
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@media screen and (width > 600px) and (width <= 780px){
+    .reports-section{
+        grid-template-columns: 1fr 1fr;
+    }
+}

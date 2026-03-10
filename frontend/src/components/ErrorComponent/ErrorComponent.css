@@ -1,0 +1,30 @@
+
+.error-component{
+    width: 100%;
+    padding: 2rem;
+    background-color: #f1dddd;
+    display: flex;
+    align-items: center;
+    gap : 1rem;
+    border-radius: 1rem;
+    color: rgb(31, 30, 30);
+    box-sizing: border-box;
+}
+
+.error-component h2{
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.error-component h3{
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.error-component p{
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin: 0;
+}

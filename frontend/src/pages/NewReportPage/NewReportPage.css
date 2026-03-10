@@ -1,0 +1,117 @@
+
+
+.new-report-page{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.new-report-page form{
+    font-size: 1.5rem;
+    font-weight: 500;
+    display: flex;
+    gap: 2rem;
+}
+
+.new-report-page form label{
+    font-size: 1.4rem;
+}
+
+.new-report-page form .form-group{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.new-report-page form h1{
+    padding: 0;
+    margin: 0;
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+.new-report-page form h2{
+    padding: 0;
+    margin: 0;
+    font-size: 1.5rem;
+    color: #959595;
+    font-weight: 500;
+}
+
+.new-report-page form .input, textarea{
+    padding: 0.8rem;
+    width: 100%;
+    font-size: 1.4rem;
+    border-radius: 0.4rem;
+    border: rgb(197, 197, 197) solid 2px;
+    outline: none;
+}
+
+.new-report-page form .input:focus, textarea:focus{
+    border: rgb(148, 148, 148) solid 2.3px;
+}
+
+
+.new-report-page form .btn-section{
+    display: flex;    
+    gap: 1rem;
+}
+
+.button{
+    padding: 0.5rem 2rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 2.5rem;
+}
+
+.new-report-page form .btn-section .button-blue{
+   background: none;
+   border: none;
+   background-color: #1990ff;
+   color: white;
+}
+
+.new-report-page form .btn-section .button-grey{
+   background: none;
+   border: none;
+   background-color: #666666;
+   color: white;
+   border-radius: 0.2rem;
+}
+
+.upload-btn{
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.img-preview-container{
+    position: relative;
+    width: 100px;
+    height: 100px;
+}
+
+.img-preview-container img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    filter: brightness(50%);
+}
+
+.img-preview-container button{
+    position: absolute;
+    right: 2%;
+    top: 2%;
+    cursor: pointer;
+    background: none;
+    border: none;
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+}
+
