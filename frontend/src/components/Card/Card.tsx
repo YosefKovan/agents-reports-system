@@ -9,7 +9,7 @@ const Card : FC<Report> = ({category, urgency, message, filePath, createdAt, use
     return (
         <div className='card'>
             <section className='img-section'>
-                <img src={filePath ? "http://localhost:3000/" + filePath : noImg} />
+                <img className="img" src={filePath ? "http://localhost:3000/" + filePath : noImg} />
             </section>
             <section className='info-section'>
                 <ul>

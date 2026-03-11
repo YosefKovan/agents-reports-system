@@ -1,0 +1,25 @@
+
+.admin-user-page{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;   
+}
+
+.admin-users-page-header{
+    display: flex;
+    gap: 1rem;
+}
+
+.admin-user-page{
+    padding: 2rem;
+}
+
+.users-section{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap : 1rem;
+}
+
+.bold{
+    font-weight: bold;
+}

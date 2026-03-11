@@ -1,8 +1,7 @@
 
-.error-component{
+.alert-component{
     width: 100%;
     padding: 2rem;
-    background-color: #f1dddd;
     display: flex;
     align-items: center;
     gap : 1rem;
@@ -11,19 +10,27 @@
     box-sizing: border-box;
 }
 
-.error-component h2{
+.fail{
+    background-color: #f1dddd;
+}
+
+.success{
+   background-color: #CEEFCE;
+}
+
+.alert-component h2{
     font-size: 1.8rem;
     font-weight: 700;
     margin: 0;
 }
 
-.error-component h3{
+.alert-component h3{
     font-size: 1.6rem;
     font-weight: bold;
     margin: 0;
 }
 
-.error-component p{
+.alert-component p{
     font-size: 1.6rem;
     font-weight: 500;
     margin: 0;

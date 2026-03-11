@@ -17,6 +17,11 @@ const ImageUpload : FC<Props> = ({file, setFile})=>{
       };
     
       useEffect(() => {
+        
+        if(!file){
+          setFileDataURL(undefined);
+        }
+        
         let fileReader: FileReader | undefined;
         let isCancel: boolean = false;
     
@@ -45,7 +50,7 @@ const ImageUpload : FC<Props> = ({file, setFile})=>{
     
     return(
     <div className="upload-btn">
-          <input type="file" onChange={changeHandler} />
+          <input type="file" onChange={changeHandler}/>
           {fileDataURL && (
             <div className="img-preview-container">
               <button onClick={handleDeleteImage}>

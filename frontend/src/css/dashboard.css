@@ -1,0 +1,53 @@
+
+.dashboard-page{
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.dashboard-page h1{
+    font-size: 4rem;
+}
+
+.dashboard-btns{
+    max-width: 460px;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.dashboard-btns .btn{
+    border-radius: 2.5rem;
+}
+
+.dashboard-btns .blue-btn{
+    background-color: #2997ff;
+    padding: 2rem;
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+    font-weight: 600;
+    transition: 0.2s;
+}
+
+.dashboard-btns .blue-outline-btn{
+    border : 3px #2997ff solid;
+    padding: 2rem;
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #2997ff;
+    transition: 0.2s;
+}
+
+.dashboard-btns .blue-btn:hover{
+    background-color: #0084ff;
+}
+
+.dashboard-btns .blue-outline-btn:hover{
+    background-color: #2997ff;
+    color: white;
+}

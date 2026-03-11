@@ -1,0 +1,55 @@
+.navbar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    font-size: 2rem;
+    box-sizing: border-box;
+    background-color: rgb(233, 233, 233);
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    gap: 3rem; 
+}
+
+ul li{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar h1{
+    margin: 0;
+    padding: 0;
+    font-size: 3rem;
+    color: rgb(65, 65, 65);
+}
+
+.navbar .logout{
+    background : none;
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 2.5rem;
+    padding: 1rem 2rem;
+    cursor: pointer;
+}
+
+
+
+@media screen and (width <= 800px) {
+    .only-large{
+        display: none;
+    }
+}
+
+

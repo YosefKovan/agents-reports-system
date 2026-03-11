@@ -9,7 +9,7 @@
     padding: 2rem;
 }
 
-form{
+.form-section form{
     width: 100dvw;
     max-width: 480px;
     box-sizing: border-box;

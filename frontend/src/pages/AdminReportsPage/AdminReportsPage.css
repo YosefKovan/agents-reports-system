@@ -1,0 +1,82 @@
+
+.admin-reports-page{
+    height: 100vh;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;  
+  font-size: 1.6rem;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+  text-align: center;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+.table-img{
+    width: 40px;
+    height: 40px;
+}
+
+.filter-section{
+    padding: 2rem;
+    background-color: rgb(235, 235, 235);
+    border-radius: 2.5rem;
+}
+
+form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap : 2rem;
+}
+
+.form-group{
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group input{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: 2px solid grey;
+    max-width: 800px;
+    outline: none;
+}
+
+
+.form-group input:focus{
+    border: 2px solid rgb(83, 83, 83);
+}
+
+.form-group select{
+    width: 50%;
+    max-width: 650px;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+.btn-section{
+    display: flex;
+    gap: 1rem;
+}
+
+.table-section{
+    overflow-x:auto;
+}

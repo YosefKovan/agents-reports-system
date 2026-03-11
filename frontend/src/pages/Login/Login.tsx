@@ -4,7 +4,7 @@ import { useState } from "react";
 import React from "react";
 import { useNavigate } from "react-router";
 import AppError from "../../errors/AppError";
-import ErrorComponent from "../../components/ErrorComponent/ErrorComponent";
+import AlertComponent from "../../components/AlertComponent/AlertComponent";
 
 const URL = "http://localhost:3000/auth/login";
 
@@ -38,7 +38,6 @@ function Login() {
 
       const data = await result.json();
       
-      console.log(data);
       
       if (!result.ok) {
         throw new AppError(data.error || "Request failed", result.status);
@@ -46,7 +45,7 @@ function Login() {
       
       localStorage.setItem("token", data.token);
 
-      navigate("/dashboard");
+      navigate(`/${data?.user?.role.toLowerCase()}/dashboard`);
 
     } catch (err) {
         
@@ -66,7 +65,7 @@ function Login() {
         <form onSubmit={handleSubmit}>
           <h1 className="login-header">Login</h1>
           {error.error && 
-            <ErrorComponent code={error.code || 500} message={error.message}/>
+            <AlertComponent code={error.code || 500} message={error.message} className="fail"/>
           }
           <div className="form-container">
             <input

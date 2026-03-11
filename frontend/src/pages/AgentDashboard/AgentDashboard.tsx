@@ -1,13 +1,15 @@
 import "./AgentDashboard.css";
+import "../../css/dashboard.css";
+
 import { Link } from "react-router";
 
 function AgentDashboard(){
     
     return(
-        <main className="agent-dashboard-page">
-            <section className="agent-dashboard-btns">
-                <Link className="btn blue-btn" to={"/new-report-page"}>Send Report</Link>
-                <Link className="btn blue-outline-btn" to={"/my-reports-page"}>View Reports</Link>
+        <main className="dashboard-page">
+            <section className="dashboard-btns">
+                <Link className="btn blue-btn" to={"/agent/new-report"}>Send Report</Link>
+                <Link className="btn blue-outline-btn" to={"/agent/my-reports"}>View Reports</Link>
             </section>
         </main>
     )
