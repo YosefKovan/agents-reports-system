@@ -18,7 +18,7 @@ const CsvUploadPage = () => {
     }
   }
 
-  async function handleSend(e : React.ChangeEvent<HTMLButtonElement>) {
+  async function handleSend(e) {
     e.preventDefault();
     
     if(!file){

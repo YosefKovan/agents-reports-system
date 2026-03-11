@@ -5,6 +5,7 @@ import "./AdminReportsPage.css";
 import "../../css/link.buttons.css";
 import "../../index.css"
 import Select from "../../components/Select/Select";
+import ReportsTable from "../../components/ReportsTable/ReportsTable";
 
 const URL = "http://localhost:3000/reports";
 
@@ -16,7 +17,7 @@ const AdminReportsPage: FC = () => {
   const [category, setCategory] = useState<string>("all");
   const [urgency, setUrgency] = useState<string>("all");
   const [userId, setUserId] = useState("");
-  const [display, setDisplay] = useState<Report[] | undefined | null>(null);
+  const [display, setDisplay] = useState<Report[]>([]);
   
   useEffect(() => {
     
@@ -44,7 +45,7 @@ const AdminReportsPage: FC = () => {
     setCategory("all");
     setUrgency("all");
     setUserId("");
-    setDisplay(apiData?.reports);
+    setDisplay(apiData?.reports || []);
   }
   
   function filter(report : Report) : boolean{
@@ -66,7 +67,7 @@ const AdminReportsPage: FC = () => {
     })
 
     
-    setDisplay(filtered);
+    setDisplay(filtered || []);
   }
 
 
@@ -90,40 +91,7 @@ const AdminReportsPage: FC = () => {
         </form>
         </section>
       <section className="table-section">  
-      <table className="reports-table">
-        <thead>
-          <tr>
-            <th>category</th>
-            <th>urgency</th>
-            <th>userId</th>
-            <th>createdAt</th>
-            <th>message</th>
-            <th>Image</th>
-          </tr>
-        </thead>
-        <tbody>
-          {display &&
-            display.map((report: Report) => (
-              <tr key={report.id}>
-                <td>{report.category}</td>
-                <td>{report.urgency}</td>
-                <td>{report.userId}</td>
-                <td>{new Date(report.createdAt).toDateString()}</td>
-                <td>{report.message}</td>
-                <td>
-                  {report.filePath ? (
-                    <img
-                      className="table-img"
-                      src={"http://localhost:3000/" + report.filePath}
-                    />
-                  ) : (
-                    "---"
-                  )}
-                </td>
-              </tr>
-            ))}
-        </tbody>
-      </table>
+        <ReportsTable reports={display}/>
       </section>
     </main>
   );

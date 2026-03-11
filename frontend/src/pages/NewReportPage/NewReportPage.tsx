@@ -50,7 +50,7 @@ function NewReportPage() {
           </div>
           {error && <AlertComponent code={error.code} className="fail" message={error.message}/>}
           {success && <AlertComponent className="success" message={success} />}
-          <div className="form-group">
+          <div className="">
             <label>Category</label>
             <input
               className="input"
@@ -60,17 +60,16 @@ function NewReportPage() {
               onChange={(e) => setCategory(e.target.value)}
             />
           </div>
-          <div className="form-group">
+          <div>
             <label>Urgency</label>
-            <input
-              className="input"
-              type="text"
-              placeholder="Enter urgency..."
-              value={urgency}
-              onChange={(e) => setUrgency(e.target.value)}
-            />
+            <select value={urgency} onChange={(e=>setUrgency(e.target.value))}>
+              <option selected value="" disabled>Select a Urgency</option>
+              <option value="high">High</option>
+              <option value="medium">Medium</option>
+              <option value="low">Low</option>
+            </select>
           </div>
-          <div className="form-group">
+          <div>
             <label>Message</label>
             <textarea
               rows={5}

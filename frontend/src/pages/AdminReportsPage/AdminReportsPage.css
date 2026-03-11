@@ -7,29 +7,6 @@
     gap: 2rem;
 }
 
-table {
-  font-family: arial, sans-serif;
-  border-collapse: collapse;
-  width: 100%;  
-  font-size: 1.6rem;
-}
-
-td, th {
-  border: 1px solid #dddddd;
-  text-align: left;
-  padding: 8px;
-  text-align: center;
-}
-
-tr:nth-child(even) {
-  background-color: #dddddd;
-}
-
-.table-img{
-    width: 40px;
-    height: 40px;
-}
-
 .filter-section{
     padding: 2rem;
     background-color: rgb(235, 235, 235);
