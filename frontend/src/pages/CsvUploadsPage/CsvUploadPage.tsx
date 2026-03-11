@@ -12,13 +12,13 @@ const CsvUploadPage = () => {
   const [file, setFile] = useState<File | null>(null);
   
 
-  function handleClick(e) {
+  function handleClick(e : React.ChangeEvent<HTMLInputElement>) {
     if (e.target.files) {
       setFile(e.target.files[0]);
     }
   }
 
-  async function handleSend(e) {
+  async function handleSend(e : React.ChangeEvent<HTMLButtonElement>) {
     e.preventDefault();
     
     if(!file){
