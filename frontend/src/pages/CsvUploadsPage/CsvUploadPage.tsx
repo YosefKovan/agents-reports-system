@@ -51,6 +51,7 @@ const CsvUploadPage = () => {
           id="fileInput"
           style={{ display: "none;" }}
           onChange={handleClick}
+          accept=".csv"
         />
         <button className="send-csv-button" onClick={handleSend}>
           Send

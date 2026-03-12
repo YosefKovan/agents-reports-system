@@ -3,6 +3,7 @@ import { type FC } from "react";
 import { type LinkInterface } from "../../interfaces/link.interfaces";
 import { useNavigate, type NavigateFunction} from "react-router";
 import "./Navbar.css";
+import useStore, {type StoreInterface} from "../../store/useStore";
 
 interface Props{
     namesAndLinks : LinkInterface[]
@@ -13,8 +14,11 @@ const Navbar : FC<Props>= ({namesAndLinks})=>{
     
     const navigate : NavigateFunction = useNavigate();
 
+    const deleteUser = useStore<() => void>((state : StoreInterface)=>state.deleteUser);
+
     function logout(){
         localStorage.removeItem("token");
+        deleteUser();
         return navigate("/login");
     }
     

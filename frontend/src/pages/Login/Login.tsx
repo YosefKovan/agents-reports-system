@@ -5,6 +5,8 @@ import React from "react";
 import { useNavigate } from "react-router";
 import AppError from "../../errors/AppError";
 import AlertComponent from "../../components/AlertComponent/AlertComponent";
+import useStore from "../../store/useStore";
+import {type User} from "../../interfaces/user.interfaces";
 
 const URL = "http://localhost:3000/auth/login";
 
@@ -21,6 +23,8 @@ function Login() {
   const [error, setError] = useState<ErrorState>({error: false, message: "", code: null});
   const [password, setPassword] = useState<string>("");
   const [agentCode, setAgentCode] = useState<string>("");
+
+  const setUser = useStore<(user : User)=>void>((state)=>state.setUser);
   
   const navigate = useNavigate();
 
@@ -38,12 +42,18 @@ function Login() {
 
       const data = await result.json();
       
+      console.log(data);
+      
       
       if (!result.ok) {
         throw new AppError(data.error || "Request failed", result.status);
       }
       
       localStorage.setItem("token", data.token);
+      
+      if(data.user){
+        setUser(data.user);
+      }
 
       navigate(`/${data?.user?.role.toLowerCase()}/dashboard`);
 

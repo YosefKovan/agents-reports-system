@@ -53,7 +53,7 @@ const ImageUpload: FC<Props> = ({ file, setFile }) => {
         <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 1024 1024"><rect width="1024" height="1024" fill="none"/><path fill="#fff" d="M544 864V672h128L512 480L352 672h128v192H320v-1.6c-5.4.3-10.5 1.6-16 1.6A240 240 0 0 1 64 624a239 239 0 0 1 212.6-237.2A240 240 0 0 1 512 192a240 240 0 0 1 235.5 194.8A239 239 0 0 1 959.9 624a240 240 0 0 1-240 240c-5.3 0-10.5-1.3-16-1.6v1.6z"/></svg>
         Upload Image
       </label>
-      <input id="upload-img" type="file" onChange={changeHandler} />
+      <input id="upload-img" type="file" onChange={changeHandler} accept="images/*"/>
       {file && <div className="file-name">
         {file.name}
       </div>}

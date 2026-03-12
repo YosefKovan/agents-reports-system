@@ -1,12 +1,17 @@
 import {create} from 'zustand'
+import {type User} from "../interfaces/user.interfaces"
 
-const useStore = create((set)=>({
-    firstName : null,
-    role : null,
-    agentCode : null,
-    updateRole : (role: "ADMIN" | "AGENT" | null) =>set(()=>({role : role})),
-    updateFirstName : (firstName : string)=> set(()=>({firstName : firstName})),
-    updateAgentCode : (agentCode : string)=> set(()=>({agentCode : agentCode})),
+export interface StoreInterface{
+    user : User | null,
+    setUser : (user : User) => void,
+    deleteUser : () => void
+}
+
+
+const useStore = create<StoreInterface>((set)=>({
+    user : null,
+    setUser : (user : User)=> set({user}),
+    deleteUser : () => set({user : null})
 }))
 
 export default useStore;
